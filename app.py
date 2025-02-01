@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
     if request.method == 'POST':
 
-        with open('knn_pickle', 'rb') as r:
+        with open('knn_diabetes', 'rb') as r:
             model = pickle.load(r)
 
         melahirkan = float(request.form['melahirkan'])
