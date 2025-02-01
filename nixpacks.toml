@@ -1,4 +1,7 @@
 # nixpacks.toml
 
+[build]
+entrypoint = "pip install -r requirements.txt"
+
 [start]
 cmd = "gunicorn app:app"
